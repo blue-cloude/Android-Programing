@@ -1,0 +1,28 @@
+파일 업로드 하는 방법
+파일 위치한 폴더로 경로 이동
+d:    /    cd (해당폴더)
+
+//이건 처음 폴더 연결할 경우...? 에만 해야하는것일 수도 있
+git config --global user.name "blue-cloude"
+git config --global user.email "supersky0428@gmail.com"
+
+git init
+//깃을 사용할 수 있도록 폴더 초기화
+
+git status 
+// 현재 저장소 파일 상태 확인 가능
+
+git add .
+//현재 파일 모두  tracked 파일로 변경
+git add 폴더명
+//기제한 폴더는  tracked 파일로 변경됨
+
+git commit -m "원하는 말 아무거나"
+//commit명령어 사용해 폴더를 커밋함
+
+//폴더 업로드 할 경로 설정후, 해당 폴더를 git에 올린다.
+git remote add origin https://github.com/blue-cloude/Android-Programing.git
+git branch -M main
+git push -u origin main
+
+한번 연결에 성공한다면, git add / commit / remote add origin "주소" / push만 반복하면 올라
